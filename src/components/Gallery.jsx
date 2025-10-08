@@ -47,7 +47,7 @@ const gardens = [
 ];
 
 export default function Gallery() {
-  const [hoveredId, setHoveredId] = useState<number | null>(null);
+  const [hoveredId, setHoveredId] = useState(null);
 
   return (
     <section id="gallery" className="py-24 px-4 sm:px-6 lg:px-8 bg-white">

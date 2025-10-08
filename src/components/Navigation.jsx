@@ -1,11 +1,6 @@
 import { Flower2 } from 'lucide-react';
 
-interface NavigationProps {
-  activeSection: string;
-  setActiveSection: (section: string) => void;
-}
-
-export default function Navigation({ activeSection, setActiveSection }: NavigationProps) {
+export default function Navigation({ activeSection, setActiveSection }) {
   const sections = [
     { id: 'home', label: 'Home' },
     { id: 'gallery', label: 'Onze Tuinen' },
@@ -14,7 +9,7 @@ export default function Navigation({ activeSection, setActiveSection }: Navigati
     { id: 'contact', label: 'Contact' },
   ];
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId) => {
     setActiveSection(sectionId);
     const element = document.getElementById(sectionId);
     if (element) {
